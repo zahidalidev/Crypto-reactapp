@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Appbar from "./component/appbar.js"
+import Footer from "./component/footer.jsx"
+import colors from "./config/colors"
+import Home from "./pages/Home.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world11111
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundColor: colors.grey }} >
+      <Appbar />
+      <Home />
+      <Footer />
     </div>
   );
 }
