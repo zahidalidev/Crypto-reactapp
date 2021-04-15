@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import colors from "../config/colors"
+import { useHistory } from 'react-router';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Appbar() {
     const classes = useStyles();
+    const history = useHistory()
 
     return (
         <div className={classes.root}>
@@ -25,10 +27,10 @@ export default function Appbar() {
                     <Typography style={{ color: colors.black, marginLeft: "3rem" }} variant="h6" color="inherit">
                         Logo
                     </Typography>
-                    <Button style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
+                    <Button onClick={() => history.push("/")} style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
                         Home
                     </Button >
-                    <Button style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
+                    <Button onClick={() => history.push("/tab1")} style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
                         Tab1
                     </Button >
                     <Button style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
