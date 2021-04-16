@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Footer extends Component{
     render(){
         return(
-            <div style={{marginTop: 200}}>
+            <div>
                 <footer className = "page-footer font-weight-lighter" style={{backgroundColor: "#1c2331", color: "white", fontWeight: "350"}}>
 
                     <div style = {{

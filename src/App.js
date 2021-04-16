@@ -9,13 +9,13 @@ import Tab2 from "./pages/Tab2.js";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: colors.grey }} >
+    <>
       <Appbar />
       <Route path="/" exact render={() => <Home />} />
       <Route path="/tab1" exact render={() => <Tab1 />} />
       <Route path="/tab2" exact render={() => <Tab2 />} />
       <Footer />
-    </div>
+    </>
   );
 }
 
