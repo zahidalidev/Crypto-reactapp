@@ -39,9 +39,13 @@ function Tab1(props) {
 
     const [buyerCompnent, setBuyerCompnent] = useState(true)
     const [value, setValue] = React.useState('market');
+    const [value2, setValue2] = React.useState('market');
 
     const handleChange = (event) => {
         setValue(event.target.value);
+    };
+    const handleChange2 = (event) => {
+        setValue2(event.target.value);
     };
 
     return (
@@ -195,7 +199,7 @@ function Tab1(props) {
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
                                                 inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
-                                                disabled={value === "market" ? true : false}
+                                                disabled={value2 === "market" ? true : false}
                                                 style={{ width: "12vw", marginRight: "4vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -206,7 +210,7 @@ function Tab1(props) {
 
                                     <div style={{ marginTop: "1rem" }} className="row justify-content-md-center" >
                                         <div className="col-md-10 d-flex justify-content-md-start " >
-                                            <RadioGroup value={value} onChange={handleChange}>
+                                            <RadioGroup value={value2} onChange={handleChange2}>
                                                 <div className="row" style={{ marginLeft: "2vw" }} >
                                                     <FormControlLabel style={{ color: colors.white }} value="market" control={<Radio />} label="Market" />
                                                     <FormControlLabel style={{ color: colors.white, marginLeft: "1vw" }} value="limit" control={<Radio />} label="Limit" />
