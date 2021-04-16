@@ -61,6 +61,7 @@ function Tab2(props) {
                             Token Address: ahosashdgashkdgk56456
                         </p>
                         <CssTextField
+                            inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                             style={{ width: "31vw" }}
                             size="small"
                             variant="outlined"
@@ -73,22 +74,6 @@ function Tab2(props) {
             <div className="container">
                 <div className="row justify-content-md-center" style={{ marginTop: "3.9rem" }} >
                     <div className="col-md-5" style={{ backgroundColor: colors.black, padding: "2rem", borderRadius: "3rem" }} >
-                        {/* <div className="row justify-content-md-center " >
-                        <p style={{ color: colors.white }} >
-                            Token Address: ahosashdgashkdgk56456
-                        </p>
-                    </div>
-                    <div className="row justify-content-md-center " >
-                        <CssTextField
-                            style={{ width: "20rem" }}
-                            size="small"
-                            variant="outlined"
-                            id="custom-css-outlined-input"
-                        />
-                    </div>  In case you want token field along with the chart component you can uncomment this    */}
-
-
-                        {/* chart component length and width will increase when you out module in respective div*/}
 
                         <div className="row justify-content-md-center " >
                             <p style={{ color: colors.white, marginTop: "10vw", fontSize: "3vw" }} >Chart</p>
@@ -126,6 +111,7 @@ function Tab2(props) {
 
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 disabled={value === "market" ? true : false}
                                                 style={{ width: "12vw", marginRight: "4vw" }}
                                                 size="small"
@@ -170,6 +156,7 @@ function Tab2(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -184,6 +171,7 @@ function Tab2(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -210,6 +198,7 @@ function Tab2(props) {
 
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 disabled={value === "market" ? true : false}
                                                 style={{ width: "12vw", marginRight: "4vw" }}
                                                 size="small"
@@ -254,6 +243,7 @@ function Tab2(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -268,6 +258,7 @@ function Tab2(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"

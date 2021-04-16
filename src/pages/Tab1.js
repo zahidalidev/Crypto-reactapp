@@ -61,6 +61,7 @@ function Tab1(props) {
                             Token Address: ahosashdgashkdgk56456
                         </p>
                         <CssTextField
+                            inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                             style={{ width: "31vw" }}
                             size="small"
                             variant="outlined"
@@ -106,6 +107,7 @@ function Tab1(props) {
 
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 disabled={value === "market" ? true : false}
                                                 style={{ width: "12vw", marginRight: "4vw" }}
                                                 size="small"
@@ -150,6 +152,7 @@ function Tab1(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -164,6 +167,7 @@ function Tab1(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -190,6 +194,7 @@ function Tab1(props) {
 
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 disabled={value === "market" ? true : false}
                                                 style={{ width: "12vw", marginRight: "4vw" }}
                                                 size="small"
@@ -234,6 +239,7 @@ function Tab1(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
@@ -248,6 +254,7 @@ function Tab1(props) {
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
                                             <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
                                                 style={{ width: "12vw", marginRight: "3.6vw" }}
                                                 size="small"
                                                 variant="outlined"
