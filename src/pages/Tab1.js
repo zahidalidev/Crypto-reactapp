@@ -73,45 +73,25 @@ function Tab1(props) {
             <div className="container">
                 <div className="row justify-content-md-center" style={{ marginTop: "3.9rem" }} >
                     <div className="col-md-5" style={{ backgroundColor: colors.black, padding: "2rem", borderRadius: "3rem" }} >
-                        {/* <div className="row justify-content-md-center " >
-                        <p style={{ color: colors.white }} >
-                            Token Address: ahosashdgashkdgk56456
-                        </p>
-                    </div>
-                    <div className="row justify-content-md-center " >
-                        <CssTextField
-                            style={{ width: "20rem" }}
-                            size="small"
-                            variant="outlined"
-                            id="custom-css-outlined-input"
-                        />
-                    </div>  In case you want token field along with the chart component you can uncomment this    */}
-
-
-                        {/* chart component length and width will increase when you out module in respective div*/}
-
                         <div className="row justify-content-md-center " >
                             <p style={{ color: colors.white, marginTop: "10vw", fontSize: "3vw" }} >Chart</p>
                         </div>
-
                     </div>
 
                     <div className="col-md-5" style={{ marginLeft: "7vw", backgroundColor: colors.black, borderRadius: "3rem" }} >
 
                         <div className="row justify-content-md-center " style={{ borderBottom: "1.5px solid grey" }} >
-
-                            <div className="col-md-6 align-self-center" style={{ backgroundColor: buyerCompnent ? "#943cad" : null, borderTopLeftRadius: "3rem" }} >
+                            <div className="col-md-6 align-self-center" style={{ backgroundColor: buyerCompnent ? "#a4508b" : null, backgroundImage: buyerCompnent ? "linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)" : null, borderTopLeftRadius: "3rem" }} >
                                 <div className="row justify-content-md-center " >
                                     <p onClick={() => setBuyerCompnent(true)} style={{ cursor: "pointer", color: colors.white, fontSize: "1.6rem", marginTop: "0.45vw", marginBottom: "0.38vw" }} > Buy</p>
                                 </div>
                             </div>
 
-                            <div className="col-md-6" style={{ borderLeft: "1.5px solid grey", backgroundColor: buyerCompnent ? null : "#943cad", borderTopRightRadius: "3rem" }} >
+                            <div className="col-md-6" style={{ borderLeft: "1.5px solid grey", backgroundColor: buyerCompnent ? null : "#a4508b", backgroundImage: buyerCompnent ? null : "linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)", borderTopRightRadius: "3rem" }} >
                                 <div className="row justify-content-md-center " >
                                     <p onClick={() => setBuyerCompnent(false)} style={{ cursor: "pointer", color: colors.white, fontSize: "1.6rem", marginTop: "0.45vw", marginBottom: "0.38vw" }} > Sell</p>
                                 </div>
                             </div>
-
                         </div>
 
                         {buyerCompnent ?
