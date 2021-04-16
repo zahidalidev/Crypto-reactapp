@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
+
 import colors from '../config/colors';
-import { Button } from '@material-ui/core';
-
-
+import { Button} from '@material-ui/core';
+                                                                                                            
 const CssTextField = withStyles({
     root: { 
         '& label.Mui-focused': {
@@ -29,7 +29,10 @@ const CssTextField = withStyles({
 })(TextField);
 
 
-function Tab1(props) {
+
+
+
+function Tab2(props) {
 
     const [buyerCompnent, setBuyerCompnent] = useState(true)
 
@@ -49,13 +52,13 @@ function Tab1(props) {
                 style={{ width: "31vw" }}
                 size="small"
                 variant="outlined"
-                id="custom-css-outlined-input"/>
+                id="custom-css-outlined-input"
+            />
         </div>
 
 
         <div className="container">
-     
-            
+
             <div className="row justify-content-md-center" style={{ marginTop: "3.9rem" }} >
                 <div className="col-md-5" style={{ backgroundColor: colors.black, padding: "2rem",borderRadius:"1rem"}} >
                     {/* <div className="row justify-content-md-center " >
@@ -99,10 +102,9 @@ function Tab1(props) {
                     </div>
 
                     {buyerCompnent ?
-                        
                         <div className="row justify-content-md-center " >
-                            
                             <div className="col-md-12">
+                                
                                 
                                 <div style={{ marginTop: "1.5rem" }} className="row justify-content-md-center " >
                                     
@@ -195,10 +197,11 @@ function Tab1(props) {
                             </div>
                         </div>
                         :
-                          <div className="row justify-content-md-center " >
-                             <div className="col-md-12">
+                        <div className="row justify-content-md-center " >
+                        <div className="col-md-12">
                             
-                                <div style={{ marginTop: "1.5rem" }} className="row justify-content-md-center " >
+                            
+                            <div style={{ marginTop: "1.5rem" }} className="row justify-content-md-center " >
                                 
                                 <div className="col-md-3 d-flex justify-content-md-center " >
                                     <p style={{ color: "white",fontSize:"1.3rem" }} >Price</p>
@@ -213,26 +216,20 @@ function Tab1(props) {
                                 />
                                 </div>
                             
-                          </div>
+                            </div>
                             
                             
-                           <div style={{ marginTop: "2rem" }} className="row justify-content-md-center" > 
+                            <div style={{ marginTop: "2rem" }} className="row justify-content-md-center" > 
                                 
                                 <div className="col-md-4 d-flex justify-content-md-center " >
                                     <p style={{ color: "white",fontSize:"1.2rem" }} >Stop Loss (%)</p>
                                 </div>
                                 
                                 <div className="col-md-6 d-flex justify-content-md-center  " >
-                                
-                                <Button 
-                                    style={{color:"white",border:"2px solid white",
-                                            width:"10.5rem",paddingRight:"90px",
-                                            marginRight:"4.1rem",fontWeight:"bold"}}>-
-                                </Button>
-                                
+                                <Button style={{color:"white",border:"2px solid white",width:"10.5rem",paddingRight:"90px",marginRight:"4.1rem",fontWeight:"bold"}}>-</Button>
                                 </div>
                             
-                           </div>
+                            </div>
                             
                             
                             
@@ -243,13 +240,7 @@ function Tab1(props) {
                                 </div>
                                 
                                 <div className="col-md-6 d-flex justify-content-md-center  " >
-                                
-                                 <Button 
-                                    style={{color:"white",border:"2px solid white",
-                                    width:"10.5rem",paddingRight:"90px",
-                                    marginRight:"4.1rem",fontWeight:"bold"}}>+
-                                 </Button>
-                                
+                                <Button style={{color:"white",border:"2px solid white",width:"10.5rem",paddingRight:"90px",marginRight:"4.1rem",fontWeight:"bold"}}>+</Button>
                                 </div>
                             
                             </div>
@@ -300,6 +291,10 @@ function Tab1(props) {
                         
                         </div>
 
+
+                        
+
+
                     </div>
                     }
                 </div>
@@ -332,4 +327,4 @@ function Tab1(props) {
 
 
 
-export default Tab1;
+export default Tab2;

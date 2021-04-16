@@ -22,20 +22,23 @@ export default function Appbar() {
 
     return (
         <div className={classes.root}>
-            <AppBar style={{ height: "3.5rem", backgroundColor: colors.white }} position="static">
+            <AppBar style={{ height: "4.5rem", backgroundColor: colors.white }} position="static">
                 <Toolbar variant="dense">
-                    <Typography style={{ color: colors.black, marginLeft: "3rem" }} variant="h6" color="inherit">
-                        Logo
+                    <Typography style={{ color: colors.black, marginLeft: "3vw",marginTop:"1vw",fontSize:"1.2vw" }} variant="h6" color="inherit">
+                        LOGO 
                     </Typography>
-                    <Button onClick={() => history.push("/")} style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
+                    <Button onClick={() => history.push("/")} style={{ color: colors.black, marginLeft: "3vw",marginTop:"1vw",fontSize:"1.2vw" }} variant="h6" color="inherit">
                         Home
                     </Button >
-                    <Button onClick={() => history.push("/tab1")} style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
+                    <Button onClick={() => history.push("/tab1")} style={{ color: colors.black, marginLeft: "1.5vw",marginTop:"1vw",fontSize:"1.2vw",border:"1px solid #2a303c",borderRadius:"0.5vw"  }} color="inherit">
                         Tab1
                     </Button >
-                    <Button style={{ color: colors.black, marginLeft: "1.5rem" }} color="inherit">
+                    <Button onClick={() => history.push("/tab2")}  style={{ color: colors.black, marginLeft: "1.5vw",marginTop:"1vw",fontSize:"1.2vw",border:"1px solid #2a303c",borderRadius:"0.5vw"  }} color="inherit">
                         Tab2
                     </Button >
+                    {/* <Typography style={{ color: colors.black, marginLeft: "50vw",marginTop:"1vw",fontSize:"1.5vw",cursor:"pointer" }} variant="h6" color="inherit">
+                        Wallet : 
+                    </Typography> */}
                 </Toolbar>
             </AppBar>
         </div>
