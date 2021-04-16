@@ -29,9 +29,10 @@ export default function Appbar() {
         <div className={classes.root}>
             <AppBar style={{ height: "4rem", backgroundColor: colors.white }} position="static">
                 <Toolbar variant="dense">
-                    <Typography style={{ color: colors.black, marginLeft: "3vw", fontSize: "1rem" }} variant="h6" color="inherit">
+                    {/* <Typography style={{ color: colors.black, marginLeft: "3vw", fontSize: "1rem" }} variant="h6" color="inherit">
                         LOGO
-                    </Typography>
+                    </Typography> */}
+                    <img style={{ marginLeft: "3vw" }} width="55px" height="55px" src="https://i.pinimg.com/originals/f7/39/67/f739676ab4cde09e114068a52f7460d6.jpg" />
                     <Button onClick={() => {
                         history.push("/")
                         setHome(true)

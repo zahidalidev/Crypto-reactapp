@@ -35,7 +35,7 @@ const CssTextField = withStyles({
 })(TextField);
 
 
-function Tab2(props) {
+function Tab1(props) {
 
     const [buyerCompnent, setBuyerCompnent] = useState(true)
     const [value, setValue] = React.useState('market');
@@ -49,7 +49,7 @@ function Tab2(props) {
     };
 
     return (
-        <div style={{ backgroundColor: "#a4508b", backgroundImage: "linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)" }}>
+        <div style={{ backgroundColor: "black" }} >
             <div className="container" >
                 <div className="row justify-content-end " style={{ color: colors.white }}>
                     <p style={{ marginTop: "1vw", whiteSpace: "nowrap" }}>ETH Balance: 0.000000001
@@ -78,29 +78,25 @@ function Tab2(props) {
             <div className="container">
                 <div className="row justify-content-md-center" style={{ marginTop: "3.9rem" }} >
                     <div className="col-md-5" style={{ backgroundColor: colors.black, padding: "2rem", borderRadius: "3rem" }} >
-
                         <div className="row justify-content-md-center " >
                             <p style={{ color: colors.white, marginTop: "10vw", fontSize: "3vw" }} >Chart</p>
                         </div>
-
                     </div>
 
                     <div className="col-md-5" style={{ marginLeft: "7vw", backgroundColor: colors.black, borderRadius: "3rem" }} >
 
                         <div className="row justify-content-md-center " style={{ borderBottom: "1.5px solid grey" }} >
-
-                            <div className="col-md-6 align-self-center" style={{ backgroundColor: buyerCompnent ? "#943cad" : null, borderTopLeftRadius: "3rem" }} >
+                            <div className="col-md-6 align-self-center" style={{ backgroundColor: buyerCompnent ? "#a4508b" : null, backgroundImage: buyerCompnent ? "linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)" : null, borderTopLeftRadius: "3rem" }} >
                                 <div className="row justify-content-md-center " >
                                     <p onClick={() => setBuyerCompnent(true)} style={{ cursor: "pointer", color: colors.white, fontSize: "1.6rem", marginTop: "0.45vw", marginBottom: "0.38vw" }} > Buy</p>
                                 </div>
                             </div>
 
-                            <div className="col-md-6" style={{ borderLeft: "1.5px solid grey", backgroundColor: buyerCompnent ? null : "#943cad", borderTopRightRadius: "3rem" }} >
+                            <div className="col-md-6" style={{ borderLeft: "1.5px solid grey", backgroundColor: buyerCompnent ? null : "#a4508b", backgroundImage: buyerCompnent ? null : "linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)", borderTopRightRadius: "3rem" }} >
                                 <div className="row justify-content-md-center " >
                                     <p onClick={() => setBuyerCompnent(false)} style={{ cursor: "pointer", color: colors.white, fontSize: "1.6rem", marginTop: "0.45vw", marginBottom: "0.38vw" }} > Sell</p>
                                 </div>
                             </div>
-
                         </div>
 
                         {buyerCompnent ?
@@ -141,7 +137,13 @@ function Tab2(props) {
                                             <p style={{ color: "white", fontSize: "1.2rem" }} >Stop Loss (%)</p>
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
-                                            <Button style={{ color: "white", border: "1px solid white", width: "20vw", paddingRight: "90px", marginRight: "4vw", fontWeight: "bold" }}>-</Button>
+                                            <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
+                                                style={{ width: "12vw", marginRight: "3.6vw" }}
+                                                size="small"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />
                                         </div>
                                     </div>
 
@@ -150,7 +152,13 @@ function Tab2(props) {
                                             <p style={{ color: "white", fontSize: "1.2rem" }} >Target (%)</p>
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
-                                            <Button style={{ color: "white", border: "1px solid white", width: "20vw", paddingRight: "90px", marginRight: "4vw", fontWeight: "bold" }}>+</Button>
+                                            <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
+                                                style={{ width: "12vw", marginRight: "3.6vw" }}
+                                                size="small"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />
                                         </div>
                                     </div>
 
@@ -287,16 +295,37 @@ function Tab2(props) {
                     <div className="col-md-8" style={{ marginBottom: "5vw" }} >
                         <p style={{ marginTop: "7rem", color: colors.white, marginLeft: "2.4rem", fontSize: "1.4rem" }}>Active Orders</p>
 
-                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
-                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
+                        {/* <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
+                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div> */}
+
+                        <table style={{ marginLeft: "2.4rem" }} class="table text-light table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
             </div>
+
         </div>
     );
 }
 
 
 
-export default Tab2;
+export default Tab1;

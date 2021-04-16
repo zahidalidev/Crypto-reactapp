@@ -137,7 +137,13 @@ function Tab1(props) {
                                             <p style={{ color: "white", fontSize: "1.2rem" }} >Stop Loss (%)</p>
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
-                                            <Button style={{ color: "white", border: "1px solid white", width: "20vw", paddingRight: "90px", marginRight: "4vw", fontWeight: "bold" }}>-</Button>
+                                            <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
+                                                style={{ width: "12vw", marginRight: "3.6vw" }}
+                                                size="small"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />
                                         </div>
                                     </div>
 
@@ -146,7 +152,13 @@ function Tab1(props) {
                                             <p style={{ color: "white", fontSize: "1.2rem" }} >Target (%)</p>
                                         </div>
                                         <div className="col-md-6 d-flex justify-content-md-center  " >
-                                            <Button style={{ color: "white", border: "1px solid white", width: "20vw", paddingRight: "90px", marginRight: "4vw", fontWeight: "bold" }}>+</Button>
+                                            <CssTextField
+                                                inputProps={{ style: { fontFamily: 'Arial', color: 'white' } }}
+                                                style={{ width: "12vw", marginRight: "3.6vw" }}
+                                                size="small"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />
                                         </div>
                                     </div>
 
@@ -283,8 +295,29 @@ function Tab1(props) {
                     <div className="col-md-8" style={{ marginBottom: "5vw" }} >
                         <p style={{ marginTop: "7rem", color: colors.white, marginLeft: "2.4rem", fontSize: "1.4rem" }}>Active Orders</p>
 
-                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
-                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
+                        {/* <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div>
+                        <div className="row" style={{ border: "1px solid white", padding: "1.5vw", marginLeft: "2.4rem" }} ></div> */}
+
+                        <table style={{ marginLeft: "2.4rem" }} class="table text-light table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
